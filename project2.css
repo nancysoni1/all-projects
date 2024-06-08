@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   /*like we can creat variable in css taaki har jagah change nhi krna pde*/
+   :root{
+    --bs-dark-color:#1a1d20;
+    --bs-dark-primary:#1a1919;
+    --bs-main-color:#FFFFFF;
+    --bs-tertiary-color:rgb(236, 133, 181);
+    --bs-secondary-color:#3e41f6;
+    --bs-primary-color:#1e302b;
+
+   }
+   .navbar .navbar-brand{
+    font-size: 2rem;
+}
+
+   
+   h1,h3,h4,h5{
+   color:var(--bs-dark-color);
+   }
+   .home h2{
+    color: rgb(98, 98, 41);
+    line-height: 3rem;
+    font-weight: 300;
+    font-size: 3rem;
+   }
+   p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;/* indicates that no bold ,italic or small caps typeface may be synthsized by the browser*/
+    text-rendering: optimizeLegibility;
+    color:var(--bs-primary-color)
+   }
+   button,a{
+   
+    font-size: 1.15rem;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.1rem;
+   }
+   
+   /*to make the content come to center*/
+   .home .container{
+    width:100%;
+    display: grid;
+    place-content: center;
+    height:inherit ;
+   }
+   .bg-main{
+   height:100%;
+    position: relative;/*bg main reltaive kyuki ye custom shape  ko parent mane */
+   }
+   .bg-color{
+    background-color:rgb(205, 219, 156);
+   }
+   
+   
+   
+.text-light-grey{
+    color:var(--bs-primary-color);
+}
+
+.custom-shape-divider-bottom-1712092215 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1712092215 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom-1712092215 .shape-fill {
+    fill: #FFFFFF;
+}
+/*upar wala part khtm*/
+.common-heading{
+margin-top: 30px;
+font-size: 2rem;
+font-weight: 500;
+letter-spacing: 0.01rem;
+}
+.common-title{
+  
+margin-bottom: 4.2rem;
+}
+@media screen and (min-width:1000px){
+    .bg-main{
+        height:85vh;
+    }  } 
+    
+    .form-control{
+        width:50%;
+    }
+    .registerr{
+        border-radius:10px;
+    }
+    .button1:hover,.btn-primary:hover{
+        background-color: rgb(159, 124, 212) !important;/*on inspecting there is cross line on some of them because some other property is overriding to see thr required we could use  !important*/
+        color: #1a1919 !important;
+    
+        padding-left:4px;
+        padding-top:1px;
+        margin-top:0.09px;
+    }

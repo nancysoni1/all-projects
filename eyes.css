@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    background-color: rgb(255, 192, 237);
+}
+.center-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.face{
+    width:400px;
+    height:400px;
+    background-color: rgb(236, 105, 197);
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.eyes{
+    display:flex;
+    justify-content: space-between;
+    box-shadow: 0 8px 6px -6px black;
+   
+  }
+.eye{
+    width: 200px;
+    height:200px;
+    background-color: rgba(165, 53, 146, 0.879) ;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position:relative;
+}
+.pupil{
+    background-color:black;
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+    position:absolute;
+}
+

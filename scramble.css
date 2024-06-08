@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(25, 175, 170);
+}
+
+.heading{
+    font-family:"Jacquard 24 Charted" , sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: rgb(5, 147, 158);
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.game{
+    background-color: rgb(166, 170, 170);
+    display:flex;
+    height:60vh;/*vh means viewport height 60 vh means 60 % of viewport- jo screen apan ko visible h
+    rem-root elemant*/
+    width:500px;
+    margin:3rem 3rem;
+    padding:20px 0;
+    border-radius: 3%;
+    flex-direction: column;
+    box-shadow: 0 8px 6px -6px black;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+input{
+    width:40%;
+    padding:15px 0;
+    text-align: center;
+    border-radius: 25px;
+    background-color: white;
+    margin:2rem 0;
+    font-size: 1.1rem;
+}
+/*button means button me jo likha hua aayega button.btm uske css ke liye*/
+button{
+    cursor: pointer;
+    margin-top: 10px;
+}
+button.btn{
+    font-weight:600;
+    padding: 1rem 2rem;
+    background: white;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+button.btn:hover,button.btn:focus,button.btn:active{
+    letter-spacing: 0.125rem;
+    word-spacing:0.2rem;
+}
+.hidden{
+    display: none;
+}
+@media(max-width:398px){
+   
+   .heading{ font-size:2rem;}
+}

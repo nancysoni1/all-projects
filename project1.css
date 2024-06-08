@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   /*like we can creat variable in css taaki har jagah change nhi krna pde*/
+   :root{
+    --bs-dark-color:#1a1d20;
+    --bs-dark-primary:#1a1919;
+    --bs-main-color:#FFFFFF;
+    --bs-tertiary-color:rgb(236, 133, 181);
+    --bs-secondary-color:#3376FF;
+    --bs-primary-color:#4b4c4d;
+
+   }
+
+   h1,h2,h3,h4,h5{
+   color:var(--bs-dark-color);
+   }
+   h2{
+    line-height: 3rem;
+    font-weight: 600;
+    font-size: 3.4rem;
+   }
+   p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;/* indicates that no bold ,italic or small caps typeface may be synthsized by the browser*/
+    text-rendering: optimizeLegibility;
+    color:var(--bs-primary-color)
+   }
+   button,a{
+   
+    font-size: 1.15rem;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.1rem;
+   }
+   
+   /*to make the content come to center*/
+   .hero-section .container{
+    width:100%;
+    display: grid;
+    place-content: center;
+    height:inherit ;
+   }
+   .bg-main{
+   height:100%;
+    position: relative;/*bg main reltaive kyuki ye custom shape  ko parent mane */
+   }
+   .bg-color{
+    background-color:rgb(26, 161, 173);
+   }
+   
+   
+   .nav-link{
+    color:var(--bs-main-color);
+   }
+   .nav-link:hover{
+    color:var(--bs-secondary-color);
+}
+.text-light-grey{
+    color:var(--bs-primary-color);
+}
+
+.custom-shape-divider-bottom-1712092215 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1712092215 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom-1712092215 .shape-fill {
+    fill: #FFFFFF;
+}
+/*upar wala part khtm*/
+.common-heading{
+font-size: 2rem;
+font-weight: 500;
+letter-spacing: 0.01rem;
+}
+.common-title{
+  
+margin-bottom: 4.2rem;
+}
+.services-section{
+padding: 6rem 0 3rem 0;/*top right bottom left*/
+}
+.icon-span{
+    /*instead of using border radius in every arrow we can use rounded-circle*/
+    width:1rem;
+    height:1rem;
+    background-color:rgb(29, 80, 250);/*var function apply nhi ho rha*/
+    color:var(--bs-main-color);
+}
+
+.card-box:hover{
+    box-shadow: rgba(149,157,165 , 0.2)  0  8px  24px;
+}
+.section2{
+    background-image: linear-gradient(rgba(22,22,22,0.1),rgba(rgba(22,22,22,0.9)), url("https://static.vecteezy.com/system/resources/thumbnails/022/925/848/small/generative-ai-illustration-of-black-wall-texture-rough-background-dark-concrete-floor-abstract-dark-blue-background-smoke-smog-empty-dark-scene-neon-light-spotlights-concrete-floor-photo.jpg"));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:1rem 0;
+    overflow:hidden;
+
+}
+.fa-star{
+    color:#3376FF
+}
+/*we used global class todefine color not particular once to define color*/
+/*make sure  write complete address just card likhne se nhi hoga write completely .carousel .card*/
+.carousel .card{
+    justify-content: center;align-items: center;
+    transition:all 0.3s linear;
+    }
+    .carousel-inner .card{
+        background-color: rgb(70, 207, 215);
+    }
+   
+    .carousel-inner .card:hover{
+        background-color:rgb(255, 255, 255);
+        color: black;
+    }
+    /*apan inspect pe jake observe kar skte h kisko change krne se kya changes aa rhe h and then apply those changes here taaki bbar chnge krke dekhna n pde*/ 
+    /*example- we can change kuchb bhi indicators ka sign color etc*/
+    .carousel-indicators{
+        bottom:-40px;
+    }
+    .carousel-indicators [data-bs-target] {
+        height:30px;
+        width:30px;
+        background-color: #3f434a;
+    }
+    /*style tag me daal ke kar rhe to i cans see the changes but aise ni dikh rhe*/
+    /*koi content apan ko centre me chahiye toh we can use margin-auto*/
+    /*now we will apply media queries jo bhi upar problrrm ho rhi thi use solve krne ke liye*/
+    .form-control{
+        width:40%;
+    }
+    .contact .bg-color{
+        background-color: #b6b9bc;
+    }
+    .path{
+        padding-left: 4px;
+    }
+    /*now the main part is done and we can apply media quesries to make changes according to size of screen on complete page*/ 
+    @media screen and (min-width:1000px){
+        .bg-main{
+            height:85vh;
+        }  } 
+        

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>codewars</title>
+    <link rel="stylesheet" href="project2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-color py-4 pt-lg-4">
+        <div class="container">
+          <a class="navbar-brand text-black  fw-bolder" href="#">WnCC</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>                                                      
+              <li class="nav-item">
+                <a class="nav-link text-capitalize"  aria-current="page"  href="#login">Login</a> 
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" aria-current="page"  href="#register">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" aria-current="page"  href="#scorecard">Scorecard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" aria-current="page"  href="#dashboard">Dashboard</a>
+              </li>
+              </ul>
+             </div>
+          </div>
+        </nav>
+        <section id="home" class="bg-main bg-color home">
+          <div class="container">
+            <div class="row mb-5">
+            <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                <h2 class="text-capitalize fw-bolder  pt-m-4">Codewars<br> Live testing portal</h2>
+                <p class="mt-3 mb-5 para-width text-light-grey">Hope you be onto something grand on your journey across the brainy deeps!<br>CodeWars V4 where you shall flaunt your scripts and engage in fierce battles with your crews. </p>
+              
+              </div>
+
+              
+              
+              <div class="custom-shape-divider-bottom-1712092215">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+              <div class="col-12 col-md-12 col-lg-6">
+                <div class="text-center text-lg-end">
+                  <img src="image1.jpg" class="hero-section--video" height="225px" width="325px" >
+                </div>
+              </div> 
+            </div>
+          </div>
+          </section>
+          
+          <section id="login" class="login">
+            <div class="container text-center common-title  fw-bold">
+              <h2 class="common-heading ">Login  <br> if already registered</h2>
+              <hr class="w-25 mx-auto">
+            </div>
+          <div class="container">
+            <form id="loginForm" class="form d-flex col-12 justify-content-center text-align-center mt-5 ">
+          
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <div id="loginError" class="error"></div>
+            <button    type="submit"  class="btn btn-primary mx-3"  onclick="goToLogin">Login</button>
+            <script>
+              function goToLogin() {
+                 window.location.href = 'login.html';}</script>
+          </form>
+          </div>
+          </section>
+         
+          <section  id="register" class="register">
+            <div class="container text-center common-title  fw-bold">
+                <h2 class="common-heading ">Register  <br> here as a team</h2>
+                <hr class="w-25 mx-auto">
+              </div>
+              <div class="container">
+                <div class="col-12 bg-color registerr shadow d-flex justify-content-center text-align-center my-5 py-5">
+                    <form id="registrationForm" class="form">
+                        <div class="mb-3 mt-4">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email"  class="form-control" id="regEmail" placeholder="email" required  aria-describedby="emailHelp">
+                          <div id="regError" class="error">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputname" class="form-label">Team name</label>
+                          <input type="username" class="form-control" id="regUsername" placeholder="Username" required>
+                          <div id="regError" class="error"></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="regPassword" placeholder="password" required>
+                            <div id="regError" class="error"></div>
+                          </div>
+                          
+                          <div class="mb-3">
+                            <label for="formFile" class="form-label">Submit your code here</label>
+                            <input class="form-control" type="file" id="formFileInput">
+                            <div id="regError" class="error"></div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="branch">Select your branch </label>
+                          <select class="form-select branchSelect" id="branchSelect" aria-label="Default select example">
+                            <option selected>branch</option>
+                            <option value="1">aerospace</option>
+                            <option value="2">civil</option>
+                            <option value="3">mechanical</option>
+                            <option value="4">Chemical</option>
+                            <option value="5">Electrical</option>
+                          </select>
+                          <div id="regError" class="error"></div>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">I agree to all terms and conditions</label>
+
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Register</button>
+                      </form>
+                   </div>
+            </div>
+          </section>
+          <section  id="scorecard"  class="scorecard">
+            <div class="container text-center common-title  fw-bold">
+                <h2 class="common-heading ">scorecard</h2>
+                <hr class="w-25 mx-auto">
+              </div>
+              <h3 class="fw-normal mx-3">Top 5 teams on the leaderboard !!!</h3>
+              <table class="table  mx-3 bg-color">
+                <thead>
+                  <tr>
+                    <th scope="col">Team no.</th>
+                    <th scope="col">Team name</th>
+                    <th scope="col">Score</th>
+                    <th scope="col">Rating</th>
+                     </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>codewars11</td>
+                    <td>5/10</td>
+                    <td>94</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>codewars5</td>
+                    <td>4/10</td>
+                    <td>76</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>codewars9</td>
+                    <td>3/10</td>
+                    <td>82</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>codewars6</td>
+                    <td>2/10</td>
+                    <td>45</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>codewars4</td>
+                    <td>1/10</td>
+                    <td>99</td>
+                  </tr>
+                </tbody>
+              </table>
+          </section>
+          
+          <script src="project2.js"></script>
+          </body></html>
+         
+         

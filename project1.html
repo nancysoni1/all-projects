@@ -1,0 +1,297 @@
+<!--use pixcap for graphic designing-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="project1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-color py-4 pt-lg-4"><!--breakpoints of  sm 576px md-768 lg-992 xl-1200-->
+        <div class="container"><!--right and left side se space nhi chaihye to container-fluid instead of container-->
+          <a class="navbar-brand text-black fw-bolder" href="#">Marketing</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><!--me-margin ends ms-margin starts-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a><!--aria current can be used to indicate that an element represent the current item within container-->
+              </li>                                                       <!--href ke andar daalte h uski location same page par-->          
+              <li class="nav-item">
+                <a class="nav-link text-capitalize"  aria-current="page"  href="#about">About</a> <!--text capitalize capitalizes first letter-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" aria-current="page"  href="/about.html">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize" aria-current="page"  href="/contact.html">Contact</a>
+              </li>
+              </ul>
+             </div>
+          </div>
+          
+        </nav>
+        <section class="bg-main bg-color hero-section"><!--bg color , bg man are classes which we will use later on to define -->
+          <div class="container">
+            <div class="row mb-5">
+            <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start"><!--like poore page pe 12 columns hote h col 6 usko 6-6 me divide and md(medium )device ho tab 12 jab large ho to do box , d-flex mean display flex, justify content vertically kaam krta h-->
+                <h2 class="text-capitalize fw-bolder text-white pt-m-4">We collect<br> high quality products</h2>
+                <p class="mt-3 mb-5 para-width text-light-grey">When it comes to sales, customers value both quality and affordability.The combination of high-quality products or services with affordable prices, making it an attractive proposition for potential customers</p><!--mt margin top para width is a class , text ka color grey-->
+              <div class="text-center w-100 text-md-start"><!--apn chahte h jab chotii screen ho tab beech me ho c button and jab medium ho to left side for that  we write this code-->
+                <button class="text-capitalize btn btn-primary px-4 py-1 mt-0.09" >contact us</button><!--ttoltip waala partt is still remaining-->
+                <!--tool tip=hover krne par upar alag se box dikhta h showing some content search tool tip add that part in your code-->
+                </div>
+              </div>
+              <!--now we want an wavy effect on background for that go to shape divider edit copy the code and paste-->
+              <div class="custom-shape-divider-bottom-1712092215">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+              <div class="col-12 col-md-12 col-lg-6"><!-- dono ko do part me divide side by side ab apan ko chota krna h or grid ke center me likhna  h -->
+                <div class="text-center text-lg-end"><!--image ko container ke end me shift krne ke liye-->
+                  <img src="seo.gif" class="hero-section--video" height="250px" width="300px" ><!--large image with text often placed at top of webpage-->
+                </div>
+              </div> 
+            </div>
+          </div>
+          
+        </section>
+        <section class="services-section">
+          <div class="container text-center common-title fw-bold">
+            <h2 class="common-heading">What will we do for<br> Your business</h2>
+            <hr class="w-25 mx-auto"><!-- w=width   .mx-auto class is for horizontally centering fixed-width block level content-->
+          </div>
+          <!--like the complete row is divided in 12 columns agar lg-6 kiya to there will be two columns and accordingly changes visible -->
+          <div class="container mt-5">
+            <div class="row g-7"><!--g(gutter)-7 increase the gap between two boxes -->
+              <div class="col-12  col-xxl-4 col-lg-4 col-md-6">
+                <div class="text-center card-box rounded-2 p-4  ">
+                  <img src="link.gif" class="img-fluid" >
+                  <h5 class="my-2 fw-normal">Link building</h5>
+                <p class="mb-4">jhjdvschdhv hfhfj ddhh udfu ugydg hh jiioe hgy huu jogjh i uhdjidh hubjk</p>
+                <!--for icons like arrow ,instagram etc first go to cdnjs.com then go to font awesome-->
+                <div class="d-flex justify-content-center align-items-center"></div>
+              <a href="#service" class="icon-span rounded-circle p-1"><!--anchor tag taaki kahi bhi redirect kar ske-->
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              </div>
+              </div>
+              <div class="col-12 col-xxl-4 col-lg-4 col-md-6">
+                <div class="text-center card-box rounded-2 p-4 "><!--bootstrap by default hmem ek class deta h shadow-->
+                  <img src="phone.gif" class="img-fluid" >
+                  <h5 class="my-2 fw-normal">Setting up</h5>
+                <p class="mb-4">jhjdvsch dhv h udfu ugydg hh jiioe hgy  huu johugjh i uhdijojidh hubjk</p>
+                <div class="d-flex justify-content-center align-items-center"></div>
+              <a href="#service" class="icon-span rounded-circle p-1">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              </div>
+              </div>
+              <div class="col-12 col-xxl-4 col-lg-4 col-md-6">
+                <div class="text-center card-box rounded-2 p-4 ">
+                  <img src="speaker.gif" class="img-fluid" >
+                  <h5 class="my-2 fw-normal"> marketing</h5>
+                <p class="mb-4">jhjd vsc hdhv hfhfj hh jiioe hgy huu i uhdijojidh hubjk</p>
+                <div class="d-flex justify-content-center align-items-center"></div>
+              <a href="#service" class="icon-span rounded-circle p-1">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class=" bg-color section2"><!--peeche background image dene ke liye we add section2 class but kuch effect nhi dik rha -->
+           <div class="container">
+              <div class="row"><!--matlab ek hi row mw laana h-->
+                <div class="col-12 col-md-12 col-lg-6 img-section">
+                  <img src="Online Shop (HD).png" height="350px" width="350px"  >
+                  </div> 
+              <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                <h2 class="text-capitalize fw-bolder text-black pt-m-4">We collect<br> high quality products</h2><!--If we wanted ki iski size bhi common heading jaisi ho we could have simply added common-heading class-->
+                <p class="mt-3 mb-4 para-width text-light-grey">When it comes to sales, customers value both quality and affordability.The combination of high-quality products or services with affordable prices, making it an attractive proposition for potential customers</p><!--mt margin top para width is a class , text ka color grey-->
+              <div class="text-center w-100 text-md-start"></div>
+              </div>
+              <!--to get the parallax effect we use more-info-section class-->
+             <!--EXPLORE PARALLAX EFFECT AND HOW DOES IT WORKS-->
+            </div>
+        </div>
+      </section>
+      <div class="container text-center common-title fw-bold pt-lg-4">
+        <h2 class="common-heading">Generating new customers <br>via online mode </h2>
+        <hr class="w-25 mx-auto"><!-- w=width   .mx-auto class is for horizontally centering fixed-width block level content-->
+      </div>
+      <section class="section3">
+        <div class="container mt-3 mb-3">
+      <div class="row g-5 ">
+          <div class="  col-xl-6   col-md-12">
+            <div class=" shadow d-flex px-2 mt-2 py-3">
+              <img src="phone.gif" height="100px" width="100px">
+              <div class="row">
+            <p class="text-capitalize p-1 ">gdbdubcud  cydeeb bce cb bc bdehy ofmr rfmr rk rmforf rmfromfr formformr ecybebd yeyh</p>
+          </div>
+        </div>
+      </div>
+      <div class="  col-xl-6 col-md-12">
+        <div class="  d-flex shadow px-2 mt-2 py-3">
+            <img src="phone.gif" height="100px" width="100px">
+              <div class="row">
+            <p class="text-capitalize p-1 ">gdbdubcud  cydeeb bce cb bc bdehyrmfr rkmfr rr rkmo rofrof roemfe eooem emfrk ecybebd yeyh</p>
+          </div>
+        </div>
+      </div>
+      <div class="  col-xl-6 ccol-md-12">
+        <div class="  d-flex shadow px-2 mt-2 py-3">
+          <img src="phone.gif" height="100px" width="100px">
+            <div class="row">
+          <p class="text-capitalize p-1">gdbdubc eormf frmfrodecfe eoode eed fr fr ud  cydeeb bce cb bc bdehy ecybebd yeyh</p>
+        </div>
+      </div>
+    </div>
+      <div class="  col-xl-6  col-md-12">
+        <div class="  d-flex shadow px-2 mt-2 py-3">
+            <img src="phone.gif" height="100px" width="100px">
+              <div class="row">
+            <p class="text-capitalize p-1">gdbdubcud  cydmrf k rkdoemfrem   jejdjjo imk i eeb bce cb bc bdehy ecybebd yeyh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!--now we will make carousel-->
+ <section class="section3 mb-5 mt-6 pt-4 pb-4 bg-color ">
+  <div class="container text-center common-title fw-bold ">
+    <h2 class="common-heading">Generating new customers <br>via online mode </h2>
+    <hr class="w-25 mx-auto"><!-- w=width   .mx-auto class is for horizontally centering fixed-width block level content-->
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container ">
+        <div class="row">
+        <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center "><!--to bring the content in center-->
+
+            <div class="card text-center" style="width: 14rem;">
+              <img src="female.png" class="card-img-top p-2" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title mb-3">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!--we dont want a button we want a star for that we will use-->
+                <div class="star  mt-3"> 
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa- fa-star"></i>
+                </div>
+                </div>
+            </div>
+          </div> 
+          <div class="col-12 col-lg-4  d-flex justify-content-center align-items-center  ">
+            <div class="card text-center" style="width: 14rem; ">
+              <img src="female.png" class="card-img-top p-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="star  mt-3"> 
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa- fa-star"></i>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center  ">
+            <div class="card text-center" style="width: 14rem;">
+              <img src="female.png" class="card-img-top p-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="star  mt-3"> 
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  </div>
+              </div>
+            </div>
+          </div>  
+       </div>
+       </div>
+       </div>
+   
+      <div class="carousel-item">
+        
+      </div>
+      <div class="carousel-item">
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    </section>
+
+    <section class="contact"><!--the use of section is to address the section on same page isliye choose name of section accordingly-->
+      <div class="container text-center common-title fw-bold">
+        <h2 class="common-heading">Thank you <br> for choosing us</h2>
+        <hr class="w-25 mx-auto"><!-- w=width   .mx-auto class is for horizontally centering fixed-width block level content-->
+      </div>
+      <div class=" contact bg-color mt-7 d-flex justify-content-center text-align-center">
+        <form>
+          <div class="mb-3 mt-4">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+        <div class="path   bg-color ">
+        <a class="nav-link text-capitalize "  aria-current="page"  href="#home">home</a>
+        <a class=" nav-link text-capitalize"  aria-current="page"  href="#about">About</a>
+        <a class="  nav-link text-capitalize"  aria-current="page"  href="#online-section">services</a>
+        <a class="nav-link  text-capitalize"  aria-current="page"  href="#online-contact">contact</a>
+        </div>
+    </section>
+  </body>
+  </html>
+
+
+
+    
